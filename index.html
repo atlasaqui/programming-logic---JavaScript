@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <Title> Calculadora de Imposto De Renda </Title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<h2>What Can JavaScript Do?</h2>
+    <main class ="container">
+        <header class="header">
+            <h1>Simulação de Aliquota Efetiva</h1>
+            <nav class="tabs">
+                <button class="active">Cálculo Mensal</button>
+                <button>Cálculo Anual</button>
+            </nav>
+        </header>
 
-<p id="demo">JavaScript can change HTML content.</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-
+        <section class="form-card"></section>
+        <h1>Calendário</h1>
+        <div class="input-group">
+            <label for="ano">Ano-calendário</label>
+            <select id="ano">
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
+    </main>
 </body>
 </html>
